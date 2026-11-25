@@ -51,7 +51,7 @@ impl NativeMenu {
         let mut submenus = Vec::new();
         let mut counter = 0usize;
         let app_menu = Submenu::new("CADCraft", true);
-        let about = MenuItem::with_id("cc-about", i18n::tr(language, "About CADCraft"), true, None);
+        let about = MenuItem::with_id("cc-about", "About CADCraft — Created by Nikhil", true, None);
         let discord = MenuItem::with_id("cc-discord", i18n::tr(language, "Join the ArtCraft Discord…"), true, None);
         let predefined = vec![
             ("Services", PredefinedMenuItem::services(Some(i18n::tr(language, "Services")))),

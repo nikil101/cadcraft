@@ -544,6 +544,13 @@ pub fn start_page(app: &mut CadApp, ui: &mut egui::Ui) {
         crate::theme::small(),
         t.text_faint,
     );
+    p.text(
+        pos2(left.left() + 34.0, left.top() + 120.0),
+        egui::Align2::LEFT_CENTER,
+        crate::tl!("Created by Nikhil"),
+        crate::theme::small(),
+        t.text_faint,
+    );
     let mut y = left.top() + 140.0;
     let mut action = None;
     for (label, cmd) in [("Open...", "open"), ("New", "new"), ("New (metric)", "new.metric"), ("Open sample drawing", "sample")] {
